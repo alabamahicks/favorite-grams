@@ -1,0 +1,33 @@
+Thinkful - API Hack
+
+Project Requirements
+The application must make use of a third-party API and use the results to change the DOM.You will need to choose the API you wish to use and how you will use the data.
+You must plan your app in detail before you start building. Send the sketch to your mentor so he or she can flag potential problems with it – such as data limits or technology requirements – before you start building.
+Try making your project responsive using media queries, as you learned in unit 1.
+
+
+
+===============================================================================
+PROJECT DEFINITION:
+
+Display collection of images from a third party app meeting some user-specific criteria, in order to allow tagging and reordering for further decision-making about individual items, or the group as a whole.
+
+First build: Instagram user-'liked' photos from user's account.
+
+Presently, in order to view images I've 'liked' on Instagram, I must use the mobile app, and drill into my account.  I can only see a recent-first series of images.  I have no way to filter those images in order to see multiple images at the same time conforming to certain criteria, and the display area of the phone is limited.
+
+This app will improve this situation by:
+
+Accessing my 'liked' images on Instagram via the JSONP API;
+Filtering those images based on attributes of the delivered items;
+	Original owner of image
+Displaying thumbnails/owners of these images in a responsive grid on my desktop monitor;
+	(future: specific mobile device support)
+Allowing annotation of the image for further decision-making;
+	(future: local storage)
+
+===============================================================================
+
+WIREFRAME:
+
+Similar to Visual Shopping List...
