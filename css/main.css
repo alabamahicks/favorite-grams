@@ -1,0 +1,188 @@
+/* size and positioning */
+body{
+	overflow: auto;
+}
+header.delete-all{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 50px; 
+  display: inline-block;
+}
+section.card{
+  position: relative;
+  display: block;
+  top: 49px;
+  margin-top:0;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-style: solid;
+  border-width: 1px;
+}
+.wrapper {
+	margin-left:auto;
+	margin-right: auto;
+	border: 1px solid chocolate;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.wrapper ul{
+	text-align: center;
+	margin: 0 auto;
+	-webkit-padding-start: 0;
+	width:100%;
+}
+/* TODO: add media queries varying width % to stack 1, 2, 3, 4 across */
+.wrapper ul li {
+	height: 150px;
+	width: 40%;
+	float: left;
+	margin: 4%;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 8px;
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+}
+.wrapper ul li{
+	text-align: center;
+	vertical-align: top;
+}
+.wrapper ul li:last-child{
+	border-style: dashed;
+	border-width: 2px;
+}
+.added-item{
+
+}
+.delete-one{
+	width: 30px;
+	height: 30px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 50%;
+	top: 0;
+	right: 0;
+	position: absolute;
+	margin-top: 0;
+	margin-right: 0;
+}
+
+input.entry-box{
+	display: none;
+
+}
+/****************************************** wider screens *********************************************/
+@media (min-width: 320px) {
+	.wrapper ul li {
+		width: 80%;
+		margin: 4%;
+	}
+}
+
+@media (min-width: 400px) {
+	.wrapper ul li {
+		width: 50%;
+		margin: 4%;
+	}
+}
+
+@media (min-width: 500px){
+	.wrapper ul li {
+		width: 39%;
+		margin: 2%;
+	}
+}
+
+@media (min-width: 600px){
+	.wrapper ul li {
+		width: 30%;
+		margin: 2%;
+	}
+}
+
+@media (min-width: 700px){
+	.wrapper ul li {
+		width: 28%;
+		margin: 2%;
+	}
+}
+
+@media (min-width: 800px){
+	.wrapper ul li {
+		width: 23%;
+		margin: 2%;
+	}
+}
+@media (min-width: 900px){
+	.wrapper ul li {
+		width: 18%;
+		margin: 2%;
+	}
+}
+@media (min-width: 1000px){
+	.wrapper ul li {
+		width: 15%;
+		margin: 2%;
+	}
+}
+@media (min-width: 1100px){
+	.wrapper ul li {
+		width: 15%;
+		margin: 2%;
+	}
+}
+
+
+/****************************************** typography *********************************************/
+.delete-all h3{
+	font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: center;
+	-webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+}
+.delete-one{
+	font-size: 1.5em;
+}
+.plus{
+	text-align: center;
+	margin-top: 25px;
+	font-family: sans-serif;
+	font-size: 2em;
+}
+
+/******************************************** colors *********************************************/
+body{
+  background-color: white;
+}
+header.delete-all{
+  background-color: #d4d4d4;
+}
+h3{
+	color: black;
+}
+section.card{
+	background-color: white;
+	border-color: #d4d4d4;
+}
+.checked {
+	border-color: #d4d4d4;;
+}
+.delete-one{
+	/*background-color: rgba(106,106,106,0.5);*/
+	background-color: #d4d4d4;
+	color: white;
+}
+.add-item{
+	color: black;
+}
+.plus{
+	color: black;
+}
