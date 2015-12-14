@@ -1,25 +1,39 @@
 /* size and positioning */
+
 body{
 	overflow: auto;
 }
-header.delete-all{
-  position: fixed;
-  top:0;
-  width: 100%;
-  height: 50px; 
-  display: inline-block;
+
+header {
+	text-align: center;
 }
-section.card{
+
+header input {
+	margin: 0.25em 0;
+	padding-left: 5px;
+}
+
+#collection-name {
+	text-align: center;
+	width: 300px;
+}
+.search__wrapper {
+	text-align: center;
+}
+
+.search__criteria{
+	margin-left: 10px;
+}
+section.results {
   position: relative;
   display: block;
-  top: 49px;
   margin-top:0;
   margin-left: 3em;
   margin-right: 3em;
   margin-bottom: 1em;
   padding: 1em;
-  border-style: solid;
-  border-width: 1px;
+  /*border-style: solid;*/
+  /*border-width: 1px;*/
 }
 .wrapper {
 	margin-left:auto;
@@ -35,48 +49,38 @@ section.card{
 	-webkit-padding-start: 0;
 	width:100%;
 }
-/* TODO: add media queries varying width % to stack 1, 2, 3, 4 across */
-.wrapper ul li {
-	height: 150px;
+
+.card {
+	height: 160px;
 	width: 40%;
 	float: left;
 	margin: 4%;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 8px;
+	border-style: none;
+	/*border-width: 1px;*/
+	/*border-radius: 8px;*/
 	list-style-type: none;
 	display: inline-block;
 	position: relative;
-}
-.wrapper ul li{
 	text-align: center;
 	vertical-align: top;
 }
-.wrapper ul li:last-child{
-	border-style: dashed;
-	border-width: 2px;
-}
-.added-item{
 
+.card__source {
+	margin: 0;
+	text-align: left;
+	margin-left: 5px;
 }
-.delete-one{
-	width: 30px;
+.card__image {
+	height: 100px;
+	width: 100px;
+	margin: 0 auto 0 auto;
+}
+.card__notes {
 	height: 30px;
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 4px;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 50%;
-	top: 0;
-	right: 0;
-	position: absolute;
-	margin-top: 0;
-	margin-right: 0;
+	width: 90%;
+	margin: 0.5em auto;
 }
 
-input.entry-box{
-	display: none;
-
-}
 /****************************************** wider screens *********************************************/
 @media (min-width: 320px) {
 	.wrapper ul li {
@@ -140,7 +144,21 @@ input.entry-box{
 
 
 /****************************************** typography *********************************************/
-.delete-all h3{
+
+html {
+	font-size: 12px;
+}
+
+header {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+}
+
+#collection-name {
+	font-size: 2rem;
+}
+
+.collection-name h3{
 	font-family: sans-serif;
 	font-size: 1.5em;
 	font-weight: lighter;
@@ -148,9 +166,7 @@ input.entry-box{
 	-webkit-margin-before: 0.5em;
     -webkit-margin-after: 0.5em;
 }
-.delete-one{
-	font-size: 1.5em;
-}
+
 .plus{
 	text-align: center;
 	margin-top: 25px;
@@ -160,29 +176,39 @@ input.entry-box{
 
 /******************************************** colors *********************************************/
 body{
-  background-color: white;
+  background-color: lightgray;
 }
-header.delete-all{
-  background-color: #d4d4d4;
+
+header {
+	background-color: lightgray;
+	color: black;
 }
+
+header input {
+	background-color: transparent;
+	border: solid white 1px;
+}
+
 h3{
 	color: black;
 }
-section.card{
+.results {
+	background-color: lightgray;
+}
+
+.card {
 	background-color: white;
-	border-color: #d4d4d4;
 }
-.checked {
-	border-color: #d4d4d4;;
-}
-.delete-one{
+
+.card__image {
 	/*background-color: rgba(106,106,106,0.5);*/
-	background-color: #d4d4d4;
-	color: white;
+	background-color: dimgray;
 }
-.add-item{
-	color: black;
+.card__notes {
+	background-color: lightgray;
 }
-.plus{
-	color: black;
+
+.card__input{
+	background-color: transparent;
+	border: none;
 }
